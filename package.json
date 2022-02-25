@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-no-let-any",
-  "version": "1.0.3",
-  "description": "A rule that prevents implicit iteration for Maps and Sets.",
+  "version": "1.0.1",
+  "description": "A rule that prevents declaring variables without a type.",
   "keywords": [
     "eslint",
     "eslintplugin"
@@ -14,6 +14,6 @@
   "author": "Zamiell",
   "main": "eslint-plugin-no-let-any.js",
   "devDependencies": {
-    "prettier": "^2.4.0"
+    "prettier": "^2.5.1"
   }
 }
