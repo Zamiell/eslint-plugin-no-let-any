@@ -12,7 +12,7 @@ let foo;
 let foo: string;
 ```
 
-This is useful because the `noImplicitAny` does not always catch this pattern. Declaring variables without the type can make code harder to read, especially if the variables are instantiated and declared far away from each other.
+This is useful because the `noImplicitAny` TypeScript compiler flag does not always catch this pattern. Declaring variables without the type can make code harder to read, especially if the variables are instantiated and declared far away from each other.
 
 <br>
 
