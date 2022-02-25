@@ -1,0 +1,19 @@
+{
+  "name": "eslint-plugin-no-let-any",
+  "version": "1.0.3",
+  "description": "A rule that prevents implicit iteration for Maps and Sets.",
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zamiell/eslint-plugin-no-let-any.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Zamiell",
+  "main": "eslint-plugin-no-let-any.js",
+  "devDependencies": {
+    "prettier": "^2.4.0"
+  }
+}
