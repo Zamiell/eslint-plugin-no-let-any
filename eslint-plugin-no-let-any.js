@@ -54,10 +54,18 @@ function noLetAny(context) {
 
       for (const declaration of node.declarations) {
         // From: https://github.com/typescript-eslint/typescript-eslint/issues/781
+        console.log(node);
         const typescriptNode =
           context.parserServices.esTreeNodeToTSNodeMap.get(declaration);
-        const type = typeChecker.getTypeAtLocation(typescriptNode);
 
+        // Skip declarations like:
+        // let [, b] = myArray;
+        // (situations like this will cause a runtime error in the "getTypeAtLocation" method below)
+        if (!typescriptNode.symbol) {
+          continue;
+        }
+
+        const type = typeChecker.getTypeAtLocation(typescriptNode);
         if (type.intrinsicName === "any") {
           context.report({
             node,
