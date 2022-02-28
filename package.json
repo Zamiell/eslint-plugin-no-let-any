@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-let-any",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A rule that prevents declaring variables without a type.",
   "keywords": [
     "eslint",
