@@ -54,7 +54,6 @@ function noLetAny(context) {
 
       for (const declaration of node.declarations) {
         // From: https://github.com/typescript-eslint/typescript-eslint/issues/781
-        console.log(node);
         const typescriptNode =
           context.parserServices.esTreeNodeToTSNodeMap.get(declaration);
 
